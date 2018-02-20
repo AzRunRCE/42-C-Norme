@@ -1,0 +1,21 @@
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/obj/Debug/appRegex.csproj.CoreCompileInputs.cache
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/bin/Debug/appRegex.exe.config
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/bin/Debug/appRegex.exe
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/bin/Debug/appRegex.pdb
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/obj/Debug/appRegex.csprojResolveAssemblyReference.cache
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/obj/Debug/appRegex.exe
+C:/Users/QMZ/Documents/Visual Studio 2017/Projects/appRegex/appRegex/obj/Debug/appRegex.pdb
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/bin/Debug/appRegex.exe.config
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/bin/Debug/appRegex.exe
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/bin/Debug/appRegex.pdb
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/obj/Debug/appRegex.csprojResolveAssemblyReference.cache
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/obj/Debug/appRegex.csproj.CoreCompileInputs.cache
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/obj/Debug/appRegex.exe
+/Users/quentinmartinez/Downloads/rar/appRegex/appRegex/obj/Debug/appRegex.pdb
+/Users/quentinmartinez/Documents/42-C-Norme/bin/Debug/appRegex.exe.config
+/Users/quentinmartinez/Documents/42-C-Norme/bin/Debug/appRegex.exe
+/Users/quentinmartinez/Documents/42-C-Norme/bin/Debug/appRegex.pdb
+/Users/quentinmartinez/Documents/42-C-Norme/obj/Debug/appRegex.csprojResolveAssemblyReference.cache
+/Users/quentinmartinez/Documents/42-C-Norme/obj/Debug/appRegex.csproj.CoreCompileInputs.cache
+/Users/quentinmartinez/Documents/42-C-Norme/obj/Debug/appRegex.exe
+/Users/quentinmartinez/Documents/42-C-Norme/obj/Debug/appRegex.pdb
