@@ -16,7 +16,7 @@ namespace appRegex.Rules
                 string line = content[i];
                 Regex regStructDefinition = new Regex(@"(\s|\t)*typedef(\s|\t)+(struct)(\s|\t)+([_a-zA-Z0-9]+)(\s|\t)+([_a-zA-Z0-9]+)", RegexOptions.IgnoreCase);
 
-                foreach (var match in regStructDefinition.Matches(line))
+                if(regStructDefinition.Match(line).Success)
                 {
                    Console.WriteLine($"[{filename}]:[{i}] Forbiden definition of struct in c file.");
                 }

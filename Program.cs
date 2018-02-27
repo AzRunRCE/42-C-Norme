@@ -19,27 +19,32 @@ namespace appRegex
         }
         private  static void Main(string[] args)
         {
-            var str =
-                File.ReadAllLines(@"app.c");
-            //"(\s|\t)*(void|char|string|int|double|float)(\s|\t)+(\w+)(\s|\t)*(\(.*\))" function
-
-          
+           string[] str =
+                File.ReadAllLines(@"My_app.c");
+           
 
             List<IRules> rules = new List<IRules>();
 
 
             rules.Add(new StructureDefinition());
             rules.Add(new TypedefUsage());
-
+            rules.Add(new NamingConvention("union","u_"));
+            rules.Add(new NamingConvention("struct", "s_"));
+            rules.Add(new NamingConvention("enum", "e_"));
+            rules.Add(new NamingConvention("global", "g_"));
+            rules.Add(new FunctionsDefinition());
+            //rules.Add(new NamingConvention("typedef struct", "s_"));
+            rules.Add(new Formating());
+            rules.Add(new Misc());
             foreach (var rule in rules)
             {
-                rule.Verify("app.c", str);
+                rule.Verify("ft_app.c", str);
             }
             //[ \t]*(typedef[ \t]*)?(struct|union|enum)([ \t]+[_a-zA-Z0-9]+)?$
-      
-      
-          
-        
+
+
+
+
             Console.ReadKey();
         }
         public string stdr(string plop)

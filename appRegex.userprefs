@@ -1,7 +1,18 @@
 ﻿<Properties StartupConfiguration="{2A6A2AD0-5D68-4A77-B10A-B8052DE11F9D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="bin/Debug/My_app.c">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="47" Column="13" />
+      <File FileName="Rules/StructureDefinition.cs" Line="21" Column="102" />
+      <File FileName="Rules/TypedefUsage.cs" Line="17" Column="42" />
+      <File FileName="Rules/FunctionsDefinition.cs" Line="39" Column="84" />
+      <File FileName="Rules/Naming.cs" Line="6" Column="1" />
+      <File FileName="Rules/UnionDefinition.cs" Line="22" Column="119" />
+      <File FileName="App.config" Line="1" Column="1" />
+      <File FileName="bin/Debug/My_app.c" Line="21" Column="9" />
+      <File FileName="Rules/Formating.cs" Line="15" Column="1" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Rules.cs" Line="1" Column="1" />
+      <File FileName="Rules/Misc.cs" Line="44" Column="107" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -10,4 +21,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.appRegex PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

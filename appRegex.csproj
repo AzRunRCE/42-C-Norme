@@ -47,9 +47,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rules.cs" />
     <Compile Include="Rules\TypedefUsage.cs" />
+    <Compile Include="Rules\FunctionsDefinition.cs" />
+    <Compile Include="Rules\Naming.cs" />
+    <Compile Include="Rules\UnionDefinition.cs" />
+    <Compile Include="Rules\Formating.cs" />
+    <Compile Include="Rules\Misc.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\My_app.c" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
