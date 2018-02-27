@@ -16,23 +16,25 @@ namespace appRegex.Rules
             {
                 Console.WriteLine($"[{filename}]:[{0}] Filenames should respect the snake_case naming convention.");
             }
+            CheckSpaceAfterKeyword(filename, content);
+                
             for (int i = 0; i < content.Length; i++)
             {
                 string line = content[i];
-                CheckSpaceVirgule(filename,i, line);
+                CheckSpaceVirgule(filename, i, line);
                 CheckOperatorSpace(filename, i, line);
                 CheckOperandSpace(filename, i, line);
-                CheckSpaceAfterKeyword(filename, i, line);
                 int count = 0;
-                foreach (var c in line){
+                foreach (var c in line)
+                {
                     if (c == '\t')
                         count = count + 4;
                     else
                         count++;
                 }
                 if (count > 80)
-                    Console.WriteLine($"[{filename}]:[{i}] Too many columns");
-                
+                    Console.WriteLine($"[{filename}]:[{i}] Line size exceeded.");
+
                 if (line.EndsWith(" ") || line.EndsWith("\t") || line.EndsWith(" ;") || line.EndsWith("\t;"))
                 {
                     Console.WriteLine($"[{filename}]:[{i}] Trailing space(s) at the end of the line.");
@@ -46,6 +48,10 @@ namespace appRegex.Rules
                 if (new Regex("([^(\t ]+_t|int|signed|unsigned|char|long|short|float|double|void|const|struct [^ ]+)\\*").Match(line).Success)
                 {
                     Console.WriteLine($"[{filename}]:[{i}]  Misplaced pointer symbol.");
+                }
+                if (new Regex(";").Matches(line).Count > 1)
+                {
+                    Console.WriteLine($"[{filename}]:[{i}]  Multiple statement on same line.");
                 }
             }
         }
@@ -108,14 +114,25 @@ namespace appRegex.Rules
             }
         }
 
-        private void CheckSpaceAfterKeyword(string filename, int position, string str)
+        private void CheckSpaceAfterKeyword(string filename, string[] content)
         {
-      
-            Regex regStructDefinition = new Regex("(return|if|else if|else|while|for)\\(", RegexOptions.IgnoreCase);
-            Match match = regStructDefinition.Match(str);
-            if (match.Success)
+            for (int i = 0; i < content.Length; i++)
             {
-                Console.WriteLine($"[{filename}]:[{position}] Missing space after keyword {match.Captures[0]}.");
+                string line = content[i];
+
+
+                Regex regStructDefinition = new Regex("(return|if|else if|else|while)\\(", RegexOptions.IgnoreCase);
+                Match match = regStructDefinition.Match(line);
+                if (match.Success)
+                {
+                    var keyword = match.Captures[0].Value.Remove(match.Captures[0].Value.Length - 1);
+                    Console.WriteLine($"[{filename}]:[{i}] Missing space after keyword {keyword}.");
+                }
+
+                if (new Regex("return[ \t]+[^;\\(=]+", RegexOptions.IgnoreCase).Match(line).Success && !match.Success)
+                {
+                    Console.WriteLine($"[{filename}]:[{i}] Missing bracket after keyword return.");
+                }
             }
         }
 

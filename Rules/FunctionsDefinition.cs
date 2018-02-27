@@ -36,8 +36,17 @@ namespace appRegex.Rules
                         Console.WriteLine($"[{filename}]:[{i}] Missing void word for this function.");
                     }
 
-                    if (m.Captures[0].Value.EndsWith(";") && !filename.EndsWith("h")){
+                    if (new Regex("[A-Z]+").Match(line).Success){
+                        Console.WriteLine($"[{filename}]:[{i}] Forbidden uppercase in function name.");
+                    }
+
+                    if (line.EndsWith(";") && !filename.EndsWith("h") && !filename.StartsWith("static")){
                         Console.WriteLine($"[{filename}]:[{i}] Forbidden function declaration in c file.");
+                    }
+                   
+                    if (!line.EndsWith(";") && filename.EndsWith("c") && !line.Contains("#define"))
+                    {
+                        Console.WriteLine($"[{filename}]:[{i}] Forbidden function implementation in h file.");
                     }
                 
                 }

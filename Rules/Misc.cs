@@ -46,5 +46,24 @@ namespace appRegex.Rules
                 }
             }
         }
+
+        private void checkSpace(string filename, string[] content)
+        {
+            for (int i = 0; i < content.Length; i++)
+            {
+                string line = content[i];
+                if (line.Contains("{") && !(line.Trim().Length == 1))
+                {
+                    Console.WriteLine($"[{filename}]:[{i}] Opening brace must be on their own line.");
+                }
+                else if (line.Contains("{") && !(line.Trim().Length == 1))
+                {
+                    if (!line.EndsWith(";"))
+                    {
+                        Console.WriteLine($"[{filename}]:[{i}] CLosing brace must be on their own line.");
+                    }
+                }
+            }
+        }
     }
 }

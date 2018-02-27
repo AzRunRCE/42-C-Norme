@@ -8,10 +8,7 @@ struct	s_list
     struct s_list   *next;
 }
 
-typedef struct  s_list  t_list;
-t_list          *ft_create_elem(void *data, int a, string b, string e);
-
-int main(void);
+int main(void)
 {
     int     a;
     char    alpha;
@@ -19,10 +16,9 @@ int main(void);
     long    hier;
 
     a = 0;
-
     if (a != alpha)
     {
-
+        return;
     }
 }
 
