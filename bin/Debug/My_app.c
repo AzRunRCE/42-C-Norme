@@ -1,25 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   My_app.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apachkof <apachkof@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2013/11/19 16:38:10 by apachkof          #+#    #+#             */
+/*   Updated: 2018/03/02 21:00:17 by quentinma        ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#ifndef FT_LIST_H
-# define FT_LIST_H
-
-struct	s_list
+	int main(void)
 {
-    void            *data;
-    struct s_list   *next;
+		int     a;
+	char    alpha;
+	if (a ==a)
+	{
+		plop();
+    	}
 }
 
-int main(void)
-{
-    int     a;
-    char    alpha;
-    string  pl;
-    long    hier;
-
-    a = 0;
-    if (a != alpha)
-    {
-        return;
-    }
-}
-
-#endif
