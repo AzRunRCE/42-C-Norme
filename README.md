@@ -1,5 +1,7 @@
 
 # Implémentation de la norme de 42 Version 2.0.1 
+
+![Image of Yaktocat](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/512px-42_Logo.svg.png)
 ## Formatage
 *	Un nom de structure doit commencer par s_. 
 *	Un nom de typedef doit commencer par t_. 
