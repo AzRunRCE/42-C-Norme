@@ -24,8 +24,7 @@ namespace appRegex
            
 
             List<IRules> rules = new List<IRules>();
-
-
+            rules.Add(new Header());
             rules.Add(new StructureDefinition());
             rules.Add(new TypedefUsage());
             rules.Add(new NamingConvention("union","u_"));
@@ -33,9 +32,12 @@ namespace appRegex
             rules.Add(new NamingConvention("enum", "e_"));
             rules.Add(new NamingConvention("global", "g_"));
             rules.Add(new FunctionsDefinition());
+            rules.Add(new Variables());
+            rules.Add(new Indentation());
             //rules.Add(new NamingConvention("typedef struct", "s_"));
             rules.Add(new Formating());
             rules.Add(new Misc());
+            rules.Add(new Comment());
             foreach (var rule in rules)
             {
                 rule.Verify("ft_app.c", str);

@@ -19,6 +19,7 @@ namespace appRegex.Rules
             for (int i = 0; i < content.Length; i++)
             {
                 string line = content[i];
+                if (line.IsComment()) continue;
                 Regex regex = new Regex($"(\\s|\\t)*{_type}(\\s|\\t)+(?<variable_name>[_a-zA-Z0-9]+)(\\s|\\t)*([^\\;])$", RegexOptions.IgnoreCase);
                 Match match = regex.Match(line);
                 var variableName = match.Groups["variable_name"].Value;
