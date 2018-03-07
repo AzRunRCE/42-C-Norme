@@ -1,4 +1,4 @@
-• Un nom de structure doit commencer par s_.
+• Un nom de structure doit commencer par s.
 • Un nom de typedef doit commencer par t_.
 • Un nom d’union doit commencer par u_.
 • Un nom d’enum doit commencer par e_.
