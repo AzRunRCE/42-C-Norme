@@ -65,7 +65,8 @@
 * Toutes les lignes intermédiaires s’alignent sur elles, et commencent par ‘**’. 
 * Les zones de commentaires commencant par // sont interdits.
 ## Les fichiers 
-* Vous ne pouvez pas inclure un .c. * Vous ne pouvez pas avoir plus de 5 définitions de fonctions dans un .c. 
+* Vous ne pouvez pas inclure un .c.
+* Vous ne pouvez pas avoir plus de 5 définitions de fonctions dans un .c. 
 ## Makefile (TODO)
 *	Les règles $(NAME), clean, fclean, re et all sont obligatoires. 
 *	Le projet est considéré comme non fonctionnel si le Makefile relink. 
