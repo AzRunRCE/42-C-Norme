@@ -56,9 +56,9 @@
 *	Seuls les noms de macros sont en majuscules 
 *	Il faut indenter les caractères qui suivent un #if , #ifdef ou #ifndef  
 ## Choses Interdites !  
-* Vous n’avez pas le droit d’utiliser : ◦ for 
-* do...while ◦ switch ◦ case ◦ goto 
-* Les opérateurs ternaires ‘ ?’ imbriqués * Les tableaux à taille variable (VLA - Variable Length Array) 
+* Vous n’avez pas le droit d’utiliser : ◦ for do...while ◦ switch◦ case◦ goto 
+* Les opérateurs ternaires ‘ ?’ imbriqués
+* Les tableaux à taille variable (VLA - Variable Length Array) 
 ## Commentaires
 * Les commentaires peuvent se trouver dans tous les fichiers source. 
 * Il ne doit pas y avoir de commentaires dans le corps des fonctions.
