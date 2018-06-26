@@ -1,7 +1,5 @@
 language: csharp
 solution: appRegex.sln
-language: csharp
-solution: DW.sln
 script:
   - grep "Test Results" build.log
 dotnet: 2.0.0
